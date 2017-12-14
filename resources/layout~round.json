@@ -1,0 +1,13 @@
+{
+    "background": "#000000",
+    "layers": [
+        {
+            "type": "TextLayer",
+            "frame": [0, 70, 180, 180],
+            "alignment": "GTextAlignmentCenter",
+            "color": "#FFFFFF",
+            "font": "ABRIL",
+            "text": "n a s t y woman"
+        }
+    ]
+}

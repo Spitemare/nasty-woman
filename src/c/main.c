@@ -1,14 +1,23 @@
 #include <pebble.h>
+#include <pebble-layout/pebble-layout.h>
 #include "logging.h"
 
 static Window *s_window;
+static Layout *s_layout;
 
 static void prv_window_load(Window *window) {
     logf();
+    s_layout = layout_create();
+    layout_add_standard_types(s_layout);
+    layout_add_font(s_layout, "ABRIL", RESOURCE_ID_FONT_ABRIL_34);
+
+    layout_parse(s_layout, RESOURCE_ID_LAYOUT);
+    layer_add_child(window_get_root_layer(window), layout_get_root_layer(s_layout));
 }
 
 static void prv_window_unload(Window *window) {
     logf();
+    layout_destroy(s_layout);
 }
 
 static void prv_init(void) {

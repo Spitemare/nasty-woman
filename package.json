@@ -6,7 +6,9 @@
     "pebble-app"
   ],
   "private": true,
-  "dependencies": {},
+  "dependencies": {
+    "pebble-layout": "file:../pebble-layout"
+  },
   "pebble": {
     "displayName": "Nasty Woman",
     "uuid": "aeea3ccb-71bc-41ae-8e4e-2d8c28da355f",
@@ -23,7 +25,19 @@
     },
     "messageKeys": [],
     "resources": {
-      "media": []
+      "media": [
+        {
+          "type": "raw",
+          "file": "layout.json",
+          "name": "LAYOUT"
+        },
+        {
+          "type": "font",
+          "file": "AbrilFatface-Regular.ttf",
+          "name": "FONT_ABRIL_34",
+          "characterRegex": "[ amnostwy]"
+        }
+      ]
     }
   }
 }
