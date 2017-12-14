@@ -7,6 +7,7 @@
   ],
   "private": true,
   "dependencies": {
+    "pebble-events": "^1.2.0",
     "pebble-layout": "file:../pebble-layout"
   },
   "pebble": {
@@ -35,7 +36,7 @@
           "type": "font",
           "file": "AbrilFatface-Regular.ttf",
           "name": "FONT_ABRIL_34",
-          "characterRegex": "[ amnostwy]"
+          "characterRegex": "[ :0-9amnostwy]"
         }
       ]
     }

@@ -2,6 +2,15 @@
     "background": "#000000",
     "layers": [
         {
+            "id": "time",
+            "type": "TextLayer",
+            "frame": [0, 16, 144, 168],
+            "alignment": "GTextAlignmentCenter",
+            "color": "#FFFFFF",
+            "font": "ABRIL",
+            "text": "00:00"
+        },
+        {
             "type": "TextLayer",
             "frame": [0, 80, 144, 168],
             "alignment": "GTextAlignmentCenter",
