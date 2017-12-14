@@ -22,7 +22,7 @@ static void prv_tick_handler(struct tm *tick_time, TimeUnits units_changed, void
 static void prv_window_load(Window *window) {
     logf();
     s_layout = layout_create();
-    layout_add_standard_types(s_layout);
+    layout_add_standard_type(s_layout, StandardTypeText);
     layout_add_font(s_layout, "ABRIL", RESOURCE_ID_FONT_ABRIL_34);
 
     layout_parse(s_layout, RESOURCE_ID_LAYOUT);
