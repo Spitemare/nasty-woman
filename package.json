@@ -8,7 +8,7 @@
   "private": true,
   "dependencies": {
     "pebble-events": "^1.2.0",
-    "pebble-layout": "file:../pebble-layout"
+    "pebble-layout": "^1.0.0"
   },
   "pebble": {
     "displayName": "Nasty Woman",
