@@ -1,5 +1,4 @@
 {
-    "background": "#000000",
     "layers": [
         {
             "id": "time",
@@ -11,6 +10,7 @@
             "text": "00:00"
         },
         {
+            "id": "text",
             "type": "TextLayer",
             "frame": [0, 70, 180, 180],
             "alignment": "GTextAlignmentCenter",
