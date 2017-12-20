@@ -49,7 +49,11 @@ static void prv_tick_handler(struct tm *tick_time, TimeUnits units_changed, void
     char *buf = (char *) text_layer_get_text(text_layer);
 
     char s[8];
+#ifdef DEMO
+    snprintf(s, sizeof(s), "12:34");
+#else
     strftime(s, sizeof(s), clock_is_24h_style() ? "%H:%M" : "%I:%M", tick_time);
+#endif
     memcpy(buf, s, sizeof(s));
 
     text_layer_set_text((TextLayer *) context, buf);
